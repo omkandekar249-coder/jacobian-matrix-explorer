@@ -1,5 +1,12 @@
 # jacobian-matrix-explorer
-A Python tool that computes numerical Jacobians to explore stability and local behavior in multivariable systems. A project I originally wrote after high school when I was trying to understand Calc 3 and start to practice linear algebra. I kept the design simple by defining functions directly in the code rather than adding user input, which made the exploration more focused.
+A Python tool that computes numerical Jacobians to explore stability and local behavior in multivariable systems. I originally put this project together right after high school as a way to get my hands dirty with Calculus III and Linear Algebra concepts before my college classes started. 
+
+My thinking: 
+- Direct Vector Functions: Defined systems directly in Python code rather than building a text parser/GUI. This avoided unnecessary software clutter and kept the focus purely on the mathematics.
+
+- Numerical Differentiation: Used SciPy (scipy.optimize.approx_fprime) to calculate finite-difference approximations for Jacobian matrices.
+
+- Phase-Space Mapping: Integrated NumPy and Matplotlib to render vector fields, flow patterns, and dynamic trajectories near equilibria.
 
 To Run:
 - Specify the multivariable function
@@ -14,6 +21,6 @@ To Run:
   - Ex. point = np.array([1.0, 1.0])
 
 libraries used:
-- Scipy
-- Numpy
-- Matplotlib
+- Numpy (Array vectorization & linear algebra operations)
+- Scipy (Numerical differentiation via approx_fprime)
+- Matplotlib (Vector field and phase-plane visualization)
