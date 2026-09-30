@@ -15,13 +15,14 @@ def vector_field(x):
         x2 * (x1 - 1)
     ])
 
+# Pick an equilibrium point to test
 point = np.array([1.0, 1.0])
 J = numerical_jacobian(vector_field, point)
 
 print("Jacobian at", point)
 print(J)
 
-
+#vector field
 def plot_vector_field():
     x_vals = np.linspace(-2, 2, 20)
     y_vals = np.linspace(-2, 2, 20)
